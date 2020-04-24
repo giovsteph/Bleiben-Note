@@ -6,6 +6,7 @@ import NoteDetail from './components/notes/NoteDetail'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateNote from './components/notes/CreateNote'
+import './index.css'
 
 class App extends Component {
 render(){
