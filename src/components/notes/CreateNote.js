@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { createNote } from '../../store/actions/noteActions.js'
 
  class CreateNote extends Component {
    state= {
@@ -14,7 +16,8 @@ import React, { Component } from 'react'
 
    handleSubmit = (e)=>{
     e.preventDefault()
-    console.log(this.state)
+    //console.log(this.state)
+    this.props.createNote(this.state)
  }
   render() {
     return (
@@ -38,4 +41,10 @@ import React, { Component } from 'react'
   }
 }
 
-export default  CreateNote
+const mapDispatchToProps = (dispatch)=>{
+  return{
+    createNote: (note) => dispatch(createNote(note))
+  }
+}
+//lleva null, porque el primer parametro es la otra función mapStateToProps
+export default  connect(null, mapDispatchToProps)(CreateNote)
