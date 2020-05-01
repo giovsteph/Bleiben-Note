@@ -1,9 +1,23 @@
 export const createNote = (note) => {
     return (dispatch, getState, { getFirebase, getFirestore }) => {
         //make async call to db
-        dispatch({
-            type: 'CREATE_NOTE',
-            note: note
+        const firestore = getFirestore();
+        firestore.collection('notes').add({
+            //this is the same as adding the title and content by themselves, it's a spread operator
+            ...note,
+            authorFirstName: 'Giov',
+            authorLastName: 'Ponce',
+            authorId: 123,
+            createdAt: new Date()
+        }).then(() => {
+            //hacer el dispatch
+            dispatch({
+                type: 'CREATE_NOTE',
+                note: note
+            });
+        }).catch((err) => {
+            dispatch({ type: 'CREATE_NOTE_ERROR', err })
         });
+
     }
 };

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createNote } from '../../store/actions/noteActions.js'
+import { Redirect } from 'react-router-dom'
 
  class CreateNote extends Component {
    state= {
@@ -20,6 +21,10 @@ import { createNote } from '../../store/actions/noteActions.js'
     this.props.createNote(this.state)
  }
   render() {
+    const { auth } = this.props;
+    //if a user is not logged in, redirects to the signin page
+    if(!auth.uid) return <Redirect to = '/signin' />
+
     return (
       <div className='container'>
       <form onSubmit={this.handleSubmit} className="white">
@@ -41,10 +46,17 @@ import { createNote } from '../../store/actions/noteActions.js'
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    auth: state.firebase.auth
+  }
+}
+
+
 const mapDispatchToProps = (dispatch)=>{
   return{
     createNote: (note) => dispatch(createNote(note))
   }
 }
 //lleva null, porque el primer parametro es la otra función mapStateToProps
-export default  connect(null, mapDispatchToProps)(CreateNote)
+export default  connect(mapStateToProps, mapDispatchToProps)(CreateNote)

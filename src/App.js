@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Navbar} from './components/layout/Navbar'
+import Navbar from './components/layout/Navbar'
 import  Dashboard  from './components/dashboard/Dashboard'
 import NoteDetail from './components/notes/NoteDetail'
 import SignIn from './components/auth/SignIn'
