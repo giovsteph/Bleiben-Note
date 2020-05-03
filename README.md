@@ -1,71 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![logo](https://i.ibb.co/4FBtYPc/captura3.png)
+
+## About this project:
+
+Bleiben-Note is German for "Remember-Note", which takes us back to our signature phrase, "The app that remembers for you". 
+It was developed as the 5th project in the Laboratoria bootcamp.
+
+In this project, you can:
+
+### `Create a New Account and Login`
+
+You can create your account with any email and password. You can login and logout at any time. Once you are logged in, you can see your initials in the little pink circle in the top (See captures).<br />
+
+### `Create a Note`
+
+You can create your own notes with a title and a content. This web app is intended to be used by several people, so I added a notification bar in the top, so you can keep track of what's been going on.<br />
+
+The page will automatically update when you make any edits or changes..<br />
+
+### `See your notes, delete them, edit them.`
+
+You can see your notes in the dashboard page (initial page), but you can also click on them to see the content of each one of them. Once you click a note, you can delete it or edit it.<br />
 
 
-![Shows CRUD functionalities](https://i.ibb.co/4FBtYPc/captura3.png)
+## Screen Captures:
 
-## Available Scripts
+![dashboard](https://i.ibb.co/zP72nqC/Captura4.png)<br>
+![note-details](https://i.ibb.co/TgfX6pT/Captura5.png)<br>
+![sign-up](https://i.ibb.co/CHnW1sk/Captura6.png)<br>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Created by:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Giovanna PC <br>
+[Giov's Github](https://github.com/giovsteph)<br>
+Giov's email: giov.ponce@gmail.com
 
-### `npm test`
+## Acknowledgments:
+ -The Net Ninja, for his tutorials and patience!<br>
+ [Youtube Channel](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ -The Laboratoria Team, for always being there for us. 
+ [Laboratoria](https://www.laboratoria.la/)
