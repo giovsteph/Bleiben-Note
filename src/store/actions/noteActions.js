@@ -30,5 +30,43 @@ export const createNote = (note) => {
 };
 
 //edit note
+//in the object in update should be the new data, right now is blank
+
+export const editNote = id => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore();
+    
+    const newTitle = prompt('New title');
+    const newContent = prompt('New content:')
+
+    firestore.collection('notes').doc(id)
+      .update({
+        title: newTitle,
+        content: newContent
+      })
+      .then(() => {
+        dispatch({ type: 'EDIT_NOTE', id })
+      }).catch(err => {
+        dispatch({ type: 'EDIT_NOTE_ERROR', err })
+    })
+  }
+};
+
 
 //delete note
+
+export const deleteNote = id => {
+  
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore();
+    
+    firestore.collection('notes').doc(id)
+      .delete()
+      .then(() => {
+        alert('note deleted')
+        dispatch({ type: 'DELETE_NOTE', id })
+      }).catch(err => {
+        dispatch({ type: 'DELETE_NOTE_ERROR', err })
+    })
+  }
+};
