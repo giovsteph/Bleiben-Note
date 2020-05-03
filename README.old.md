@@ -45,7 +45,7 @@ Hoy en día la mayoría de la población cuenta con algún dispositivo mobile o 
 
 Ella esta enamorada de la idea y quiere llevarla acabo, pero no tiene el tiempo necesario para empezar el proyecto,  planea que sea un proyecto independiente a su trabajo, por ello esta buscando algunas colaboradoras dentro de la comunidad de Laboratoria para que implementen la idea, por lo cual te pedimos que la ayudes.
 
-![Shows CRUD functionalities](https://raw.githubusercontent.com/florenciasilva/lab-notes/master/demo-crud.gif?token=AGJBHNTVAQRWOVF2IGMP6FK5NVFAS)
+![Shows CRUD functionalities](https://i.ibb.co/4FBtYPc/captura3.png)
 
 
 Para este proyecto necesitas crear una Web App con `React`, `Firebase` y `react-router`.

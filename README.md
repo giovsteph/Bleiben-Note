@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+![Shows CRUD functionalities](https://i.ibb.co/4FBtYPc/captura3.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
