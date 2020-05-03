@@ -37,8 +37,8 @@ You can see your notes in the dashboard page (initial page), but you can also cl
 Giov's email: giov.ponce@gmail.com
 
 ## Acknowledgments:
- -The Net Ninja, for his tutorials and patience!<br>
+ - The Net Ninja, for his tutorials and patience!<br>
  [Youtube Channel](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
 
- -The Laboratoria Team, for always being there for us. 
+ - The Laboratoria Team, for always being there for us. <br>
  [Laboratoria](https://www.laboratoria.la/)
