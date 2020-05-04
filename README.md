@@ -25,10 +25,15 @@ You can see your notes in the dashboard page (initial page), but you can also cl
 ## Screen Captures:
 
 ![dashboard](https://i.ibb.co/zP72nqC/Captura4.png)<br>
-![note-details](https://i.ibb.co/TgfX6pT/Captura5.png)<br>
+![note-details](https://i.ibb.co/wKVxNTW/Captura5.png)<br>
 ![sign-up](https://i.ibb.co/CHnW1sk/Captura6.png)<br>
 
+## Technologies Used:
 
+- ReactJS
+- Redux
+- Firebase
+- Materialize
 
 ## Created by:
 

@@ -9,18 +9,14 @@ import { deleteNote, editNote } from '../../store/actions/noteActions.js'
 class NoteDetail extends Component {
 
   handleDelete = e => {
-    console.log('delete btn')
     const { id } = this.props;
-    console.log(id)
     e.preventDefault();
     this.props.deleteNote(id);
     this.props.history.push("/");
   }
 
   handleEdit = e => {
-    console.log('edit btn')
      const { id } = this.props;
-     console.log(id)
      e.preventDefault();
     this.props.editNote(id);
     this.props.history.push("/");

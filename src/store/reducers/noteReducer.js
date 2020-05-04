@@ -9,15 +9,16 @@ const noteReducer = (state = initState, action) => {
       console.log("create note error", action.err);
       return state;
     case 'DELETE_NOTE':
-      console.log('delete note');
+      alert('Note Deleted');
       return state;
     case 'DELETE_NOTE_ERROR':
-      console.log('delete note error', 'state: ', state, 'action: ', action.note);
+      console.log('delete note error');
       return state;
     case 'EDIT_NOTE':
+      console.log('note edited')
       return state;
     case 'EDIT_NOTE_ERROR':
-      console.log('Edit note error', 'state: ', state, 'action: ', action.note);
+      console.log('Edit note error');
       return state;
     default:
       return state;

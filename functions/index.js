@@ -23,7 +23,6 @@ exports.noteCreated = functions.firestore
       user: `${note.authorFirstName} ${note.authorLastName}`,
       time: admin.firestore.FieldValue.serverTimestamp()
     }
-   console.log(notification);
    
   
     return createNotification(notification);

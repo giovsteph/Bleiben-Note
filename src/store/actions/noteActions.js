@@ -63,7 +63,6 @@ export const deleteNote = id => {
     firestore.collection('notes').doc(id)
       .delete()
       .then(() => {
-        alert('note deleted')
         dispatch({ type: 'DELETE_NOTE', id })
       }).catch(err => {
         dispatch({ type: 'DELETE_NOTE_ERROR', err })

@@ -2,7 +2,6 @@ import React from 'react';
 
 const Notifications = (props) => {
   const { notifications } = props;
-  console.log(notifications);
   return (
     <div className='section'>
       <div className='card z-depth-0'>
